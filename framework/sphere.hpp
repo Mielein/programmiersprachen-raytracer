@@ -10,6 +10,7 @@ public:
     Sphere(glm::vec3 mid,float rad,std::string name, Color colour);
     float area() const override;
     float volume() const override;
+    std::ostream& print( std::ostream& os) const override;
 
 private:
     glm::vec3 mid_;
