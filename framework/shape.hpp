@@ -7,12 +7,14 @@
 
 class Shape{
     public:
+    Shape();
     Shape(std::string name, Color color);
+    virtual~Shape();
     virtual float area() const = 0;
     virtual float volume() const = 0;
     virtual std::ostream& print( std::ostream& os) const;
 
-    private:
+    protected:
     std::string name_;
     Color colour_;
 };
