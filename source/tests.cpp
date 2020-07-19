@@ -68,6 +68,12 @@ TEST_CASE("print_box","[box_print]"){
   std::cout<<test1;
   std::cout<<test3; 
 }
+TEST_CASE("ostream_test","[ostream_operator"){
+  std::string s = "???";
+  std::ostringstream test;
+  test<<s;
+  REQUIRE(test.str()=="???");
+}
 TEST_CASE("intersect_ray_sphere","[intersect]"){
 // Ray
 glm::vec3 ray_origin{0.0f,0.0f,0.0f};
