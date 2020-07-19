@@ -66,7 +66,7 @@ TEST_CASE("print_box","[box_print]"){
   Box test4({1.0f,4.0f,2.0f},{6.0f,28.0f,-1.0f});
 
   std::cout<<test1;
-  std::cout<<test3;
+  std::cout<<test3; 
 }
 TEST_CASE("intersect_ray_sphere","[intersect]"){
 // Ray
@@ -130,77 +130,71 @@ void aufgabe8(){
 
 int main(int argc, char *argv[])
 {
-  return Catch::Session().run(argc, argv);
   aufgabe8();
+  return Catch::Session().run(argc, argv);
 }
-//aufgabe 5.8                                   
-//with virtual                                //without virtual
-/* a wild sphere destructor has appeared      a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-name:                                         name: 
-colour: (1,0,0)                               colour: (1,0,0)
-center: 1, 1, 1                               center: 1, 1, 1
-radius: 1                                     radius: 1
-volume: 12.5664                               volume: 12.5664
-surface area: 4.18879                         surface area: 4.18879
-name: rhysphere                               name: rhysphere
-colour: (0,1,0)                               colour: (0,1,0)
-center: 1, 1, 1                               center: 1, 1, 1
-radius: 0                                     radius: 0
-volume: 0                                     volume: 0
-surface area: 0                               surface area: 0
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-name:                                         name:  
-colour: (1,0,0)                               colour: (1,0,0)
-minimum: 1, 1, 1                              minimum: 1, 1, 1
-maximum: 2, 2, 2                              maximum: 2, 2, 2
-volume: 6                                     volume: 6 
-surface area: 1                               surface area: 1 
-name: ???                                     name: ???
-colour: (0,1,0)                               colour: (0,1,0) 
-minimum: 0, 0, 0                              minimum: 0, 0, 0 
-maximum: 0, 0, 0                              maximum: 0, 0, 0 
-volume: 0                                     volume: 0 
-surface area: 0                               surface area: 0   
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!
-a wild sphere destructor has appeared         a wild sphere destructor has appeared
-Shape destructor is here to destruct!!        Shape destructor is here to destruct!!*/
 
-//aufgabe 5.8
-//with virtual
+//5.8
+//with virtual                              without virtual
+/* 
+creating s1                                 creating s1
+creating s2                                 creating s2
+name: sphere0                               name: sphere0  
+colour: (255,0,0)                           colour: (255,0,0)
+center: 0, 0, 0                             center: 0, 0, 0
+radius: 1.2                                 radius: 1.2
+volume: 18.0956                             volume: 18.0956
+surface area: 7.23823                       surface area: 7.23823
+name: sphere1                               name: sphere1
+colour: (255,0,0)                           colour: (255,0,0)
+center: 0, 0, 0                             center: 0, 0, 0
+radius: 1.2                                 radius: 1.2
+volume: 18.0956                             volume: 18.0956
+surface area: 7.23823                       surface area: 7.23823
+a wild sphere destructor has appeared       a wild sphere destructor has appeared
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!  
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!!      a wild sphere destructor has appeared
+a wild sphere destructor has appeared       Shape destructor is here to destruct!!
+Shape destructor is here to destruct!! 
+*/
